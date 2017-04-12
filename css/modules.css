@@ -1,0 +1,49 @@
+.clear-fix {
+  clear: both;
+}
+.hamburger{
+  background: none;
+  position: absolute;
+  top: 3.5vw;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.nav-bar {
+  padding: 0.1em;
+}
+.nav-bar ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+.nav-bar:hover ul {
+  display: block;
+}
+.nav-bar li {
+  display: block;
+  float: right;
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .3em .1em;
+  border-bottom: 1px solid #ccc;
+}
+@media only screen  and (min-width: 800px){
+
+.hamburger {display: none;}
+
+.nav-bar ul {
+  padding-left:3vw;
+  float: left;
+  display: inline;
+}
+
+}
