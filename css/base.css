@@ -2,9 +2,9 @@ body {
 	background-color: rgba(21,32,42,.2);
 }
 h1 {
-  margin-left:3.5vw;
-  margin-top: 3.5vw;
-  float: left;
+	background-color:purple;
+  	margin-left:3.5vw;
+  	margin-top: 3.5vw;
 }
 footer {
   

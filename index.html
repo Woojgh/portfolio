@@ -4,29 +4,33 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/modules.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+	<script src="https://use.fontawesome.com/f082c730fe.js"></script>
 </head>
 <body>
 	<header>
 		<h1 id="name">James Salamonsen</h1>
-		<nav class="nav-bar">
-			<button class="hamburger">&#9776;</button>
-			<ul>
+		<nav id="nav-bar" class="nav-bar">
+			<button id="hamburger"class="hamburger">&#9776;</button>
+			<ul id="nav-bar-ul" class="nav-bar-ul">
 				<li><a href="#name">Home</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#about-me">About Me</a></li>
-				<li><a href="https://github.com/Woojgh">GitHub</a></li>
+				<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Woojgh">GitHub</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<div id="aboutMe" class="aboutMe"></div>
-		<div id="projectLatest" class="projectLatest"></div>
-		<div id="projectsPrevious" class="projectPrevious"></div>
+		<div id="projectFirst" class="projectFirst"></div>
+		<div id="projectSecond" class="projectSecond"></div>
+		<div id="projectsThird" class="projectThird"></div>
 	</main>
 	<footer>
 		
 	</footer>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/projectData.js"></script>
 	<script type="text/javascript" src="js/projectSources.js"></script>
 </body>
 </html>

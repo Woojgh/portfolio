@@ -1,9 +1,41 @@
+.aboutMe{
+  background-color:blue;
+  height:10vw;
+  min-height:145px;
+  min-width:351px;
+  width:95%;
+}
+.projectFirst{
+  color:white;
+  background-color: red;
+  min-height: 278px;
+  height: 20vw;
+  width: 20vw;
+  min-width: 351px;
+}
+.projectSecond{
+  color:white;
+  background-color: yellow;
+  min-height: 278px;
+  height: 20vw;
+  width: 20vw;
+  min-width: 351px;
+}
+.projectThird{
+  color:white;
+  background-color: green ;
+  min-height: 278px;
+  height: 20vw;
+  width: 20vw;
+  min-width: 351px;
+}
+}
 .clear-fix {
   clear: both;
 }
 .hamburger{
   background: none;
-  position: absolute;
+  position: fixed;
   top: 3.5vw;
   right: 0;
   line-height: 45px;
@@ -19,18 +51,19 @@
 .nav-bar {
   padding: 0.1em;
 }
-.nav-bar ul {
+.nav-bar-ul {
+  position:fixed;
   display: none;
   padding: 0;
-  list-style: none;
+  list-style: ;
   clear: both;
 }
-.nav-bar:hover ul {
+.nav-bar-click {
+  float:right;
   display: block;
 }
 .nav-bar li {
-  display: block;
-  float: right;
+  display: inline;
   margin-right: .4em;
   font-size: 1.5em;
   padding: .3em .1em;
@@ -41,9 +74,20 @@
 .hamburger {display: none;}
 
 .nav-bar ul {
-  padding-left:3vw;
-  float: left;
+  padding-left:3vw; 
   display: inline;
+}
+.projectFirst{
+  float:left;
+  display:inline;
+}
+.projectSecond{
+  float:left;
+  display:inline;
+}
+.projectThird{
+  float:left;
+  display:inline;
 }
 
 }
