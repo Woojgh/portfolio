@@ -1,4 +1,4 @@
-var projectsArray = [
+var projectData = [
 {
 	title: 'Robust Real Time Face Detection',
 	author: 'PAUL VIOLA & MICHAEL J. JONES',
