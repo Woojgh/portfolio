@@ -22,3 +22,7 @@ Project.prototype.toHtml = function() {
   $newProject.append('<hr>');
   return $newProject.html();
 };
+projectData.sort(function(a, b) {
+	return (new Project(b.publishedOn)) - (new Project(a.publishedOn));
+});
+
