@@ -1,46 +1,111 @@
 		<!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/modules.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/modules.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://use.fontawesome.com/f082c730fe.js"></script>
+	<script id="project-template" type="text/x-handlebars-template">
+		<project>
+			<header>
+          		<h1>{{{title}}}</h1>
+          		<div class="byline">By 
+          			<address><a href="">{{{author}}}</a></address>
+            		<time pubdate datetime="2000-01-01">{{{publishedOn}}}</time>
+          		</div>
+        	</header>
+        	<section class="article-body">{{{body}}}</section>
+        	<a href="#" class="read-on">Read on &rarr;</a>
+		</project>
+	</script> 	
 </head>
 <body>
-	<header>
-		<h1 id="name">James Salamonsen</h1>
+	<header class="site-header clearfix">
+		<section class="heading-group-h1">
+			<h1 id="name">James Salamonsen</h1>
+		</section>
 		<nav id="nav-bar" class="nav-bar">
-			<button id="hamburger"class="hamburger">&#9776;</button>
+		    <div id="icon-menu" class="icon-menu">
+		    	<a id="nav-toggle" class="nav-toggle" href="#"><img src="images/parrots/hd/sadparrot.gif"></a>
+		    </div>
 			<ul id="nav-bar-ul" class="nav-bar-ul">
-				<li><a href="#name">Home</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#about-me">About Me</a></li>
+				<li class="tab"><a href="#name"><img class="fighter1" src="images/freeze.gif"></a></li>
+				<li>'	'</li>
+				<li class="tab" data-content="projects"><a href="#projects"><img class="fighter2" src="images/liukang.gif"></a></li>
+				<li class="tab" data-content="about"><a href="#about-me"><img class="fighter3" src="images/RaidenBlu.gif"></a></li>
+			</ul>
+			<ul id="nav-bar-ul" class="nav-bar-ul">
 				<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Woojgh">GitHub</a></li>
+				<li><i class="fa fa-medium" aria-hidden="true"></i><a href="https://medium.com/@jamessalamonsen">Medium</a></li>
+				<li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/james-salamonsen-12237b82/">Linkd-in</a></li>
+				<li id="icon-close" class="icon-close"><a id="nav-toggle" class="nav-toggle" href="#"><img src="images/parrots/hd/closeparrot.gif"></a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<div id="aboutMe" class="aboutMe"></div>
-		<div id="projectFirst" class="projectFirst">
-			<article class="template" data-category="cat">
-        <header>
-          <h1>Title</h1>
-          <div class="byline">
-            By <address><a href="">Author Name</a></address>
-            published <time pubdate datetime="2000-01-01">Publish Time</time>
-          </div>
-        </header>
-        <section class="article-body"></section>
-      </article
+		<section id="name" class="tab-content"></section>
+		<section id="projects" class="tab-content"></section>
+		<section id="about" class="tab-content">
+			<header>
+			  <img src='https://s-media-cache-ak0.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif'>
+				The stuff I Write
+			</header>
+			<section>
+				<h1>Thing's I enjoy</h1>
+			</section>
+		</section>
+		<div id="interactive3d">
+			<img src="images/stop.png">
 		</div>
-		<div id="projectSecond" class="projectSecond"></div>
-		<div id="projectsThird" class="projectThird"></div>
 	</main>
-	<footer>
-		
+	<footer id="footer" class="footer">
+			 <p id="big-parrot">               ........:oo:........
+	                       o//ssssssssyhhysssss+////o                   .'''''''''''''''''.
+	                 mddmmm/::ddddddddddddddmmmyss::/mmN               |   PARTY OR DIE   |
+	                 o..+oodddmmmhhhhhhhhhhhdmmmmmdddooy               | ,................'
+	              h::oyyhddmmm+++///////////++++++mmmddy::s            |/
+	           Nyyo[[sddhyyyyy::::::::::::::::::::yyymmh//oyym
+	           h..:oohmm+:://///::::////////////////+mmmmms..sNN
+	           m++sddmmm+::hddhhy::+ddddddddddddddhhhmmmmmdhh+++d
+	        Nsssyyhmmhssooodmmhhh::+mmdyyyyyyyyddddddmmmmmmmmo::d
+	      mmd../mmmmmo::shhdmmhhh::+mmhooooooooyhhmmmmmmmmmmmyssdmm
+	      +++++smmdddo::///dmmhhh::+mmhooooooooooommmmmddddmmmdd/++m
+	      ``+hhhmmhoo/:::::oooooossymmhooooooooyyymmdoooooydddmmo//N
+	      ++:mmmmmy:::::::::::::/yyhmmhooooooooyhhmmd:::::+yyhmmyssddd
+	      ooommmmmy:::::::::::::://ommhooooooooooommd:::::://shhdmm+..
+	      yyhmmh++/::::::::::::::::+mmhooooooooyyymmd::::::::/++hmm+//
+	      dddmmh++/::::::::::::::::+mmhooooooooyhhddh:::::::::::hmmysshhd
+	      mmmmmdhhs::::::::::::::::+mmhoooooooohhhhhy:::::::::::hmmhhh``+
+	      mmmmmh++/::::::::::::::::+mmdhhsooooodmm++/:::::::::::hmmsss``+
+	      dddmmhoo+::::::::::::::::+dddddyssyyydmm::::::::::::::hmmsoo++o
+	      dddmmdhho::::::::::::::::+hhdmmddddmmmmm::::::::::::::hmmsooNNN
+	      mmmmmh///::::::::::::::::+hhdmmmmmmmmddd::::::::::::::hmmsoo++/
+	      yyhmmdss+::::::::::::::::/ooydddmmmmmsoo::::::::::::::yddhyy::+
+	      ++ommmmmy:::::::::::::::::::ohhdmmddd/::::::::::::::::shhdmmsssNNNmmN
+	      ..+mmmmmy:::::::::::::::::::://shh+//:::::::::::::::::://dmmmmdoo+..o
+	      ``+dddmmhss+:::::::::::::::::::+++/::::::::::::::::::::::ooodddhhysshNNy++m
+	      ``+hhdmmdhhs///:::::::::::::::::::::::::::::::::::::::::::::yyymmmmmmmmo++hNNmdd
+	      ``+hhdmmdhhhhh+:::::::::::::::::::::::::::::::::::::::::::::::/hhhhhdmmmmmsoo...
+	      ``+ddmmmdhhhhhyyyyyyyyyyyo:::::::::::::::::::::::::::::::::::::+++++sdddmmdhhsss//+
+	      ``+mmmmmhsshhhhhhhhhhhhhhy++/:::::::::::::::::::::::::::::::::::::::+ssyyydmmddd///hhd
+	      ``+mmmmmy::shhhhhhhhhhhhhhhhs:::::::::::::::::::::::::::::::::::::::::::::ymmmmmmmh../
+	      ``+mmmmmy:://////////////ohhhyy+::::::::::::::::::::::::::::::::::::::::::///hddmmmhhs++s
+	      ``+mmmmmhssssssssssssssssydddddysssssssssssssssssssssssssssssssssssssssssssssdddmmmmmy::s
+	      ``+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhooh
+	      </p>
 	</footer>
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+	<script src="js/jquery.interactive_3d.min.js"></script>
+	<script type="text/javascript" src="js/navBar.js"></script>
+	<script type="text/javascript" src="js/projectView.js"></script>
 	<script type="text/javascript" src="js/projectData.js"></script>
 	<script type="text/javascript" src="js/projectSources.js"></script>
 </body>
