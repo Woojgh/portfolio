@@ -1,110 +1,104 @@
+.big-parrot {
+  display:none;
+}
 .site-header {
   background: url("http://i.imgur.com/zb3BZCv.gif");
+  height:46vw;
+  
   width:100%;
 }
-.fighter1 {
-  height: 17vw;
-  width: 17vw;
+.nav-bar-fighters {
+  display: none;
+  margin-right: .4em; 
+  padding: .5em .2em;
 }
-.fighter2 {
-  height: 16vw;
-  width: 11vw;
+.fighterRight {
+  position: absolute;
+    height: 16vw;
+    width: 11vw;
+    top: 28.9vw;
+    left: 23vw;
 }
-.fighter3 {
+.fighterLeft {
+  position: absolute;
+  left: 53vw;
+  top: 30vw;
   height:15vw;
   width:11vw;
 }
 .heading-group-h1 {
-  float: left;
+  display:inline;
   padding: 0 0 .2em 1em;
 }
-
-.icon-menu {
-  font-size: 3em;
-  float: right;
+.close-nav {
+  height:8vw;
+  width:9vw;
 }
-
-.nav-bar {
-  padding: 0.1em;
+.open-nav {
+  height: 8vw;
+  width: 9vw;
 }
-
-.nav-bar ul {
-  float: right;
+.nav-toggle-open {
+  left: 90.5vw;
+  position: absolute;
+  top: -2.3vw;
+  }
+.nav-toggle-close {
+  display:none;
+  left: 90.5vw;
+  position: absolute;
+  top: 18vw;
+}
+.tab-content {
+  display:none;
+}
+.nav-bar-links {
+  color: white;
   display: none;
-  padding: 0;
-  list-style: none;
-  clear: both;
+  float:right;
+  font-size: 22px;
+  padding-bottom: .24vw;  
+  padding-right: 7vw;
+  padding-top: 2vw;
 }
-
-.nav-bar-click ul {
-  display: inline;
-}
-
-.nav-bar li {
-  display: inline;
-  margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
-}
-
-#filters {
-  padding: 0;
-  list-style: none;
-}
-
 .byline {
   color: #777;
 }
-
 .byline a {
   font-weight: bold;
-  text-decoration: none;
 }
-#footer{
+.interactive3d {
+  display:none;
+}
+.footer{
+  height:80%;
   width:80%;
-  height:80%%;
 }
 
 @media only screen and (min-width: 640px) {
 
   .nav-bar {
-    padding: .2em .2em .2em 2 em;
+    padding: .2em .2em .2em 2em;
   }
-  .nav-bar-ul {
-    display:block;
-  }
-
-  .nav-bar li {
-    display:block;
-    border-bottom: none;
-  }
+  
 
   .nav-bar ul li:hover a {
     color: #29506D;
   }
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
-    float: ;
   }
-
-  #filters select {
-    width: 15em;
-    margin: .2em .2em;
-  }
-
-  #filters li {
-    width: 20em;
-    display: inline;
-  }
-
 }
 @media only screen and (min-width: 860px) {
-  .nav-bar-ul {
-    display: inline;
-  }
-  .nav-bar li {
+  .nav-bar-fighters {
     display:inline;
   }
-
+  .nav-toggle-open {
+    left: 90.5vw;
+    position: absolute;
+    top: -2.3vw;
+  }
+  .nav-toggle-open {
+    display:none;
+  }
 }

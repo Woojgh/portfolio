@@ -7,18 +7,9 @@
 }
 
 .clearfix::after {
-  content: "";
-  display: table;
   clear: both;
 }
 
-.heading-group-h1 {
-  max-width: 80%;
-}
 
-#filters select {
-  width: 90%;
-  margin: .2em 5%;
-}
 
 
