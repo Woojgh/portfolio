@@ -4,6 +4,7 @@ var projectView = {};
 
 projectView.handleMainNav = function() {
   $('.nav-bar').on('click', '.tab', function(e) {
+    e.preventDefault();
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
@@ -13,19 +14,17 @@ projectView.handleMainNav = function() {
 
 projectView.setTeasers = function() {
   $('.project-body *:nth-of-type(n+2)').hide();
-
-  $('#projects').on('click', 'a.read-on', function(e) {
+  $('.projects').on('click', 'a.read-on', function(e) {
     e.preventDefault();
     $(this).parent().find('*').fadeIn();
     $(this).hide();
   });
 };
-projectView.interactive3d = function(){
-$('#interactive_3d').interactive_3d({ frames: 30});
-}
+
+$('#interactive3d').interactive3d({ frames: 30});
+
 
 $(document).ready(function() {
-  projectView.interactive3d();
   projectView.handleMainNav();
   projectView.setTeasers();
 });

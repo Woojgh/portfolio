@@ -1,11 +1,12 @@
+#big-parrot {
+  color:white;
+}
 h1 {
   font-family: 'Play', sans-serif;
   color:#313131;
       font-size:45px;
       font-weight: bold;
       -webkit-animation:colorchange 20s infinite alternate;
-      
-      
     }
 
     @-webkit-keyframes colorchange {
@@ -63,15 +64,12 @@ h1 {
         color: pink;
       }
     }
-
 }
-
 
 a {
   color:#313131;
       
       -webkit-animation:colorchange 20s infinite alternate;
-      
       
     }
 
