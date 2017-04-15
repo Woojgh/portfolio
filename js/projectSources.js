@@ -1,29 +1,25 @@
 'use strict';
+
 var projects = [];
-var $projectLatest = $('projectLatest');
-var $projectPrevious = $('projectPrevious');
-$projectPrevious.append(projectData);
 
 function Project (projectDataObj) {
  this.title = projectDataObj.title;
- this.category = projectDataObj.category;
  this.author = projectDataObj.author;
  this.authorUrl = projectDataObj.authorUrl;
  this.publishedOn = projectDataObj.publishedOn;
  this.body = projectDataObj.body;
 }
 Project.prototype.toHtml = function() {
-	var $newProject = $('article.template').clone();
-  $newProject.find('h1').text(this.title);
-  $newProject.find('address').text(this.author);
-  $newProject.find('section.article-body').html(this.body);
-  $newProject.find('time').text(this.publishedOn);
-  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-  $newProject.append('<hr>');
-  return $newProject.html();
+  var templateScript = $('#project-template').html();
+  var theTemplate = Handlebars.compile(templateScript);
+  this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
+  this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
+  var compiledHtml = theTemplate(this);
+  return compiledHtml;
 };
+
 projectData.sort(function(a, b) {
-	return (new Project(b.publishedOn)) - (new Project(a.publishedOn));
+	return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
 projectData.forEach(function(projectObject) {
@@ -31,5 +27,5 @@ projectData.forEach(function(projectObject) {
 });
 
 projects.forEach(function(project) {
-  $('#projectFirst').append(project.toHtml());
+  $('#projects').append(project.toHtml());
 });

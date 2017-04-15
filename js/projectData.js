@@ -21,3 +21,25 @@ var projectData = [
 	body: ' Pixy is a fast vision sensor for DIY robotics and similar applications.  It’s capable of tracking hundreds of objects simultaneously and only provides the data you are interested in.'
 }
 ];
+// var resumeData = [
+// {
+// 	title: ,
+// 	place: ,
+// 	date: 
+// },
+// {
+// 	title: ,
+// 	place: ,
+// 	date: 
+// }
+// {
+// 	title: ,
+// 	place: ,
+// 	date: 
+// }
+// {
+// 	title: ,
+// 	place: ,
+// 	date: 
+// }
+// ];

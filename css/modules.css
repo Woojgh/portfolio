@@ -1,93 +1,112 @@
-.aboutMe{
-  background-color:blue;
-  height:10vw;
-  min-height:145px;
-  min-width:351px;
-  width:95%;
+.site-header {
+  text-align: center;
+  background: url("/home/nostromos/Documents/projects/portfolio/images/fight.gif");
+  width:100%;
 }
-.projectFirst{
-  color:white;
-  background-color: red;
-  min-height: 278px;
-  height: 20vw;
-  width: 20vw;
-  min-width: 351px;
+.fighter1 {
+  height: 19vw;
+  width: 19vw;
 }
-.projectSecond{
-  color:white;
-  background-color: yellow;
-  min-height: 278px;
-  height: 20vw;
-  width: 20vw;
-  min-width: 351px;
+.fighter2 {
+  height: 18vw;
+  width: 13vw;
 }
-.projectThird{
-  color:white;
-  background-color: green ;
-  min-height: 278px;
-  height: 20vw;
-  width: 20vw;
-  min-width: 351px;
+.fighter3 {
+  height:17vw;
+  width:13vw;
 }
+.heading-group-h1 {
+  float: left;
+  padding: 0 0 .2em 1em;
 }
-.clear-fix {
-  clear: both;
+
+.icon-menu {
+  font-size: 3em;
+  float: right;
 }
-.hamburger{
-  background: none;
-  position: fixed;
-  top: 3.5vw;
-  right: 0;
-  line-height: 45px;
-  padding: 5px 15px 0px 15px;
-  color: #999;
-  border: 0;
-  font-size: 4em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
+
 .nav-bar {
   padding: 0.1em;
 }
-.nav-bar-ul {
-  position:fixed;
+
+.nav-bar ul {
+  float: right;
   display: none;
   padding: 0;
-  list-style: ;
+  list-style: none;
   clear: both;
 }
-.nav-bar-click {
-  float:right;
-  display: block;
+
+.nav-bar-click ul {
+  display: inline;
 }
+
 .nav-bar li {
   display: inline;
   margin-right: .4em;
   font-size: 1.5em;
-  padding: .3em .1em;
+  padding: .5em .2em;
   border-bottom: 1px solid #ccc;
 }
-@media only screen  and (min-width: 800px){
 
-.hamburger {display: none;}
+#filters {
+  padding: 0;
+  list-style: none;
+}
 
-.nav-bar ul {
-  padding-left:3vw; 
-  display: inline;
+.byline {
+  color: #777;
 }
-.projectFirst{
-  float:left;
-  display:inline;
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
 }
-.projectSecond{
-  float:left;
-  display:inline;
+/*#footer{
+  width:80%;
+  height:20%;
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif');
+}*/
+
+@media only screen and (min-width: 640px) {
+
+  .nav-bar {
+    padding: .2em .2em .2em 2 em;
+  }
+  .nav-bar-ul {
+    display:block;
+  }
+
+  .nav-bar li {
+    display:block;
+    border-bottom: none;
+  }
+
+  .nav-bar ul li:hover a {
+    color: #29506D;
+  }
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: ;
+  }
+
+  #filters select {
+    width: 15em;
+    margin: .2em .2em;
+  }
+
+  #filters li {
+    width: 20em;
+    display: inline;
+  }
+
 }
-.projectThird{
-  float:left;
-  display:inline;
-}
+@media only screen and (min-width: 860px) {
+  .nav-bar-ul {
+    display: inline;
+  }
+  .nav-bar li {
+    display:inline;
+  }
 
 }
