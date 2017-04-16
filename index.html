@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="css/layout.css">
 	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<script src="https://use.fontawesome.com/f082c730fe.js"></script>
+<!-- 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ -->	<script src="https://use.fontawesome.com/f082c730fe.js"></script>
 	<script id="project-template" type="text/x-handlebars-template">
 		<project>
 			<header>
@@ -26,26 +26,25 @@
 	</script> 	
 </head>
 <body>
-	<header class="site-header clearfix">
+	<header id="site-header" class="site-header clearfix">
 		<section class="heading-group-h1">
 			<h1 id="name">James Salamonsen</h1>
 		</section>
 		<nav id="nav-bar" class="nav-bar">
 		    <div id="icon-menu" class="icon-menu">
-		    	<a id="nav-toggle" class="nav-toggle" href="#"><img src="images/parrots/hd/sadparrot.gif"></a>
-		    </div>
-			<ul id="nav-bar-ul" class="nav-bar-ul">
-				<li class="tab"><a href="#name"><img class="fighter1" src="images/freeze.gif"></a></li>
-				<li>'	'</li>
-				<li class="tab" data-content="projects"><a href="#projects"><img class="fighter2" src="images/liukang.gif"></a></li>
-				<li class="tab" data-content="about"><a href="#about-me"><img class="fighter3" src="images/RaidenBlu.gif"></a></li>
-			</ul>
-			<ul id="nav-bar-ul" class="nav-bar-ul">
+		    	<a id="nav-toggle-open" class="nav-toggle-open" href="#"><img id="open-nav" class="open-nav" src="images/parrots/hd/sadparrot.gif"></a>
+			<ul id="nav-bar-links" class="nav-bar-links">
 				<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Woojgh">GitHub</a></li>
 				<li><i class="fa fa-medium" aria-hidden="true"></i><a href="https://medium.com/@jamessalamonsen">Medium</a></li>
 				<li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/james-salamonsen-12237b82/">Linkd-in</a></li>
-				<li id="icon-close" class="icon-close"><a id="nav-toggle" class="nav-toggle" href="#"><img src="images/parrots/hd/closeparrot.gif"></a>
-				</li>
+			</ul>
+		    
+			<a id="nav-toggle-close" class="nav-toggle-close" href="#"><img id="close-nav" class="close-nav" src="images/parrots/hd/closeparrot.gif"></a>
+			</div>
+			<ul id="nav-bar-fighters" class="nav-bar-fighters">
+				<!-- <li class="tab"><a href="#name"><img class="fighter1" src="images/freeze.gif"></a></li> -->
+				<li id="fighterAbout" class="tab" data-content="about"><a href="#about"><img class="fighterRight" src="images/RaidenBlu.gif"></a></li>
+				<li id="fighterProject" class="tab" data-content="projects"><a href="#projects"><img class="fighterLeft" src="images/liukang.gif"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -61,12 +60,12 @@
 				<h1>Thing's I enjoy</h1>
 			</section>
 		</section>
-		<div id="interactive3d">
+		<div id="interactive3d" class="interactive3d">
 			<img src="images/stop.png">
 		</div>
 	</main>
 	<footer id="footer" class="footer">
-			 <p id="big-parrot">               ........:oo:........
+			 <p id="big-parrot" class="big-parrot">               ........:oo:........
 	                       o//ssssssssyhhysssss+////o                   .'''''''''''''''''.
 	                 mddmmm/::ddddddddddddddmmmyss::/mmN               |   PARTY OR DIE   |
 	                 o..+oodddmmmhhhhhhhhhhhdmmmmmdddooy               | ,................'
