@@ -1,3 +1,48 @@
+.button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 50px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+.button {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
 .big-parrot {
   display:none;
 }
@@ -43,6 +88,12 @@ header section ul li{
   top: 17vw;
   left: -4vw;
 }
+.interactive_3d > img{
+  position: relative;
+  float: left;
+  left: 0;
+  width: 333px;
+}
 .open-nav {
   height: 8vw;
   width: 9vw;
@@ -71,13 +122,15 @@ header section ul li{
   font-weight: bold;
 }
 .interactive3d {
-  display:none;
+  display:inline;
 }
 .footer{
   height:80%;
   width:80%;
 }
-
+.videoCount {
+  display:none;
+}
 @media only screen and (min-width: 640px) {
   .fighterRight {
     position: absolute;
