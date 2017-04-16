@@ -12,6 +12,6 @@
 
 $(document).ready(function() {
   $("#i3d").interactive_3d({
-    frames: 38
+    frames: 16
   });
 });
