@@ -46,40 +46,14 @@
 .big-parrot {
   display:none;
 }
-.site-header {
-  background: url("http://i.imgur.com/zb3BZCv.gif");
-  height:44vw;
-  max-height:470px;
-  border-radius: 10px;
-  width:100%;
-}
 header section ul li{
   display:inline;
 }
-.nav-bar-fighters {
-  display: none;
-  margin-right: .4em; 
-  padding: .5em .2em;
+.byline {
+  color: #777;
 }
-#fighterAbout {
-  display:inline;
-}
-.fighterRight {
-  position: absolute;
-  height: 16vw;
-  width: 11vw;
-  top: 18.9vw;
-  left: 23vw;
-}
-.fighterLeft {
-  position: absolute;
-  left: 53vw;
-  top: 20vw;
-  height:15vw;
-  width:11vw;
-}
-.heading-group-h1 {
-  padding: 0 0 .2em 1em;
+.byline a {
+  font-weight: bold;
 }
 .close-nav {
   position: absolute;
@@ -88,15 +62,60 @@ header section ul li{
   top: 17vw;
   left: -4vw;
 }
+
+#countdown {
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+#dizzy {
+  text-align: center;
+}
+#facespin {
+  color:black;
+  text-align: center;
+}
+#fighterAbout {
+  display:inline;
+}
+.fighterLeft {
+  position: absolute;
+  left: 53vw;
+  top: 20vw;
+  height:15vw;
+  width:11vw;
+}
+.fighterRight {
+  position: absolute;
+  height: 16vw;
+  width: 11vw;
+  top: 18.9vw;
+  left: 23vw;
+}
+.footer{
+  height:80%;
+  width:80%;
+}
+.heading-group-h1 {
+  padding: 0 0 .2em 1em;
+}
+.interactive3d {
+  display:inline;
+  text-align: center;
+}
 .interactive_3d > img{
   position: relative;
   float: left;
   left: 0;
   width: 333px;
 }
-.open-nav {
-  height: 8vw;
-  width: 9vw;
+.nav-bar-fighters {
+  display: none;
+  margin-right: .4em; 
+  padding: .5em .2em;
+}
+.nav-bar-links {
+  color: #fff;
 }
 .nav-toggle-open {
   left: 90.5vw;
@@ -109,25 +128,30 @@ header section ul li{
   position: absolute;
   top: 18vw;
 }
-.tab-content {
+.open-nav {
+  height: 8vw;
+  width: 9vw;
+}
+/*#projects {
+  display:none;
+}*/
+#stars-background {
   display:none;
 }
-.nav-bar-links {
-  color: #fff;
+.site-header {
+  background: url("http://i.imgur.com/zb3BZCv.gif");
+  height:44vw;
+  max-height:470px;
+  border-radius: 10px;
+  width:100%;
 }
-.byline {
-  color: #777;
-}
-.byline a {
-  font-weight: bold;
-}
-.interactive3d {
-  display:inline;
-}
-.footer{
-  height:80%;
-  width:80%;
-}
+/*#spinwords {
+  background-color:rgba(32,43,54,0.2);
+  color:black;
+}*/
+/*.tab-content {
+  display:;
+}*/
 .videoCount {
   display:none;
 }
