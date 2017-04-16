@@ -50,20 +50,28 @@
 	</header>
 	<main>
 		<section id="name" class="tab-content"></section>
-		<section id="countdown" class="count-down"><video controls><source src="images/countdown.mp4"></video></section>
+		<section id="countdown" class="count-down">
+			<button id="destructButton" type="submit" class="button">SelfDestructSequence</button>
+			<video id='videoCount' class="videoCount"><source src="images/countdown.mp4"></video>
+		</section>
 		<section id="projects" class="tab-content"></section>
 		<section id="about" class="tab-content">
-			<header>
-			  <img src='https://s-media-cache-ak0.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif'>
-				The stuff I Write
-			</header>
-			<section>
-				<h1>Thing's I enjoy</h1>
+			  <img id="stars-background" src='https://s-media-cache-ak0.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif'>
+			<!-- <section>
+				<a href="javascript:var KICKASS_SITE_KEY='4S4YpKGUflr3bdXtYX16MHAj';var el = document.createElement('script'); el.src = '//hi.kickassapp.com/kickass-mysite.js';document.body.appendChild(el);void(0);">the button</a>
+			</section> -->
+			<section id="dizzy">
+				<h1>MAKE ME DIZZY!!!</h1>
 			</section>
 		</section>
-		<div id="interactive3d" class="interactive3d">
-			<img src="images/stop.png">
-		</div>
+		<section id="spinwords">
+			<canvas height="1000" width="1000"/>
+		</section>
+		<section id="facespin" class="face-spin">
+			<div id="i3d" class="interactive3d">
+				<img src="images/stop.png">
+			</div>
+		</section>
 	</main>
 	<footer id="footer" class="footer">
 			 <p id="big-parrot" class="big-parrot">               ........:oo:........
@@ -103,10 +111,13 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-	<script src="js/jquery.interactive_3d.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.interactive_3d.min.js"></script>
 	<script type="text/javascript" src="js/navBar.js"></script>
 	<script type="text/javascript" src="js/projectView.js"></script>
 	<script type="text/javascript" src="js/projectData.js"></script>
 	<script type="text/javascript" src="js/projectSources.js"></script>
+	<script type="text/javascript" src="js/countDown.js"></script>
+	<script type="text/javascript" src="js/interactive.js"></script>
+	<script type="text/javascript" src="js/rotatingText.js"></script>
 </body>
 </html>

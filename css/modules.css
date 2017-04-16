@@ -1,40 +1,59 @@
+.button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 50px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+.button {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
 .big-parrot {
   display:none;
-}
-.site-header {
-  background: url("http://i.imgur.com/zb3BZCv.gif");
-  height:44vw;
-  max-height:470px;
-  border-radius: 10px;
-  width:100%;
 }
 header section ul li{
   display:inline;
 }
-.nav-bar-fighters {
-  display: none;
-  margin-right: .4em; 
-  padding: .5em .2em;
+.byline {
+  color: #777;
 }
-#fighterAbout {
-  display:inline;
-}
-.fighterRight {
-  position: absolute;
-  height: 16vw;
-  width: 11vw;
-  top: 18.9vw;
-  left: 23vw;
-}
-.fighterLeft {
-  position: absolute;
-  left: 53vw;
-  top: 20vw;
-  height:15vw;
-  width:11vw;
-}
-.heading-group-h1 {
-  padding: 0 0 .2em 1em;
+.byline a {
+  font-weight: bold;
 }
 .close-nav {
   position: absolute;
@@ -43,9 +62,60 @@ header section ul li{
   top: 17vw;
   left: -4vw;
 }
-.open-nav {
-  height: 8vw;
-  width: 9vw;
+
+#countdown {
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+#dizzy {
+  text-align: center;
+}
+#facespin {
+  color:black;
+  text-align: center;
+}
+#fighterAbout {
+  display:inline;
+}
+.fighterLeft {
+  position: absolute;
+  left: 53vw;
+  top: 20vw;
+  height:15vw;
+  width:11vw;
+}
+.fighterRight {
+  position: absolute;
+  height: 16vw;
+  width: 11vw;
+  top: 18.9vw;
+  left: 23vw;
+}
+.footer{
+  height:80%;
+  width:80%;
+}
+.heading-group-h1 {
+  padding: 0 0 .2em 1em;
+}
+.interactive3d {
+  display:inline;
+  text-align: center;
+}
+.interactive_3d > img{
+  position: relative;
+  float: left;
+  left: 0;
+  width: 333px;
+}
+.nav-bar-fighters {
+  display: none;
+  margin-right: .4em; 
+  padding: .5em .2em;
+}
+.nav-bar-links {
+  color: #fff;
 }
 .nav-toggle-open {
   left: 90.5vw;
@@ -58,26 +128,33 @@ header section ul li{
   position: absolute;
   top: 18vw;
 }
-.tab-content {
+.open-nav {
+  height: 8vw;
+  width: 9vw;
+}
+/*#projects {
+  display:none;
+}*/
+#stars-background {
   display:none;
 }
-.nav-bar-links {
-  color: #fff;
+.site-header {
+  background: url("http://i.imgur.com/zb3BZCv.gif");
+  height:44vw;
+  max-height:470px;
+  border-radius: 10px;
+  width:100%;
 }
-.byline {
-  color: #777;
-}
-.byline a {
-  font-weight: bold;
-}
-.interactive3d {
+/*#spinwords {
+  background-color:rgba(32,43,54,0.2);
+  color:black;
+}*/
+/*.tab-content {
+  display:;
+}*/
+.videoCount {
   display:none;
 }
-.footer{
-  height:80%;
-  width:80%;
-}
-
 @media only screen and (min-width: 640px) {
   .fighterRight {
     position: absolute;
