@@ -23,7 +23,6 @@ var navBarOpen = function(){
     $('.nav-toggle-open').toggle();
     $('.nav-bar-fighters').toggle();
     $('.nav-toggle-close').toggle(); 
-    $('.nav-bar-links').toggle();
   });
 };
 var navBarClose = function(){
@@ -31,10 +30,14 @@ var navBarClose = function(){
     $('.nav-toggle-open').toggle();
     $('.nav-bar-fighters').toggle();
     $('.nav-toggle-close').toggle(); 
-    $('.nav-bar-links').toggle();
   });
 };
 var aboutToggle = function(){
+  $('img.fighterRight').hover(function(){
+     $(this).attr('src','images/raidenattack.gif'); 
+},function(){
+    $(this).attr('src','images/RaidenBlu.gif');
+});
   $('#fighterAbout').on('click', function(){
     $('#about').toggle();
   });
