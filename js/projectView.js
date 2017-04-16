@@ -8,10 +8,8 @@ projectView.handleMainNav = function() {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
-
   $('.nav-bar .tab:first').click();
 };
-
 projectView.setTeasers = function() {
   $('.project-body *:nth-of-type(n+2)').hide();
   $('.projects').on('click', 'a.read-on', function(e) {
@@ -20,8 +18,6 @@ projectView.setTeasers = function() {
     $(this).hide();
   });
 };
-
-
 $(document).ready(function() {
   projectView.handleMainNav();
   projectView.setTeasers();

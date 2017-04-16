@@ -26,3 +26,6 @@ setInterval(function() {
     ctx.fillTextCircle('MAKE ME DIZZY MAKE ME DIZZY MAKE ME DIZZY', 100, 100, 80, 0);
     ctx.restore();
 }, 1000);/*1000 = 1 second*/
+// $(document).ready(function(){
+//   CanvasRenderingContext2D.fillTextCircle();
+// });

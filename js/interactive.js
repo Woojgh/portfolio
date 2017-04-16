@@ -1,6 +1,5 @@
-// $('#interactie3d').interactive3d({
-//   debugger;
-//   frames: 30,
+// $('#i3d').interactive3d({
+//    frames: 1,
 //   cursor: 'move',
 //   speed: 0,
 //   entrance: true,
@@ -12,6 +11,6 @@
 
 $(document).ready(function() {
   $("#i3d").interactive_3d({
-    frames: 16
+    frames: 1
   });
 });
