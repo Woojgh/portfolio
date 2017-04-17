@@ -1,9 +1,9 @@
 'use strixt';
 
 var destructSequence = function() {
-	$('#destructButton').on('click', function(){
-		$('#videoCount').toggle(function(){
-			$('#destructButton').text('Override Sequence');
+	$('#destructButton').on('click', function() {
+			$('#destructButton').text('Override');
+		$('#videoCount').toggle(function() {
 			this[this.paused ? 'play' : 'pause']();
 			});
 		});

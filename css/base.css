@@ -88,9 +88,16 @@ body {
   line-height: 1.5;
   position:relative;
 }
+header section ul li{
+  display:inline;
+}
 hr {
   margin: 1em;
   width: 80%;
+}
+main {
+  background-color: black;
+  width: 98vw;
 }
 p {
   font-size: 1em;

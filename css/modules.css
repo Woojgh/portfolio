@@ -37,12 +37,10 @@
   -moz-animation: glowing 1500ms infinite;
   -o-animation: glowing 1500ms infinite;
   animation: glowing 1500ms infinite;
+  width:31vw;
 }
 .big-parrot {
   display:none;
-}
-header section ul li{
-  display:inline;
 }
 .byline {
   color: #777;
@@ -57,13 +55,18 @@ header section ul li{
   top: 17vw;
   width: 9vw;
 }
+.controls {
+  display:inline;
+}
 #countdown {
   background-color: black;
-  border-radius: 10px;
   text-align: center;
+  width:98vw;
 }
 #dizzy {
+  background-color: black;
   text-align: center;
+  width: 98vw;
 }
 #facespin {
   color:black;
@@ -96,14 +99,23 @@ header section ul li{
 #mortalkombat {
   text-align: center;
 }
+.johnny {
+  border-radius:10px;
+  margin-top:0.6vw;
+  opacity:0.5;
+}
 .kombat-game {
+  background-color: black;
   display:none;
+  width:98vw;
 }
 #llama {
   text-align: center;
 }
 .llama-game {
+  background-color: black;
   display:none;
+  width:98vw;
 }
 .interactive3d {
   display:inline;
@@ -138,18 +150,22 @@ header section ul li{
   height: 8vw;
   width: 9vw;
 }
-/*#projects {
-  display:none;
-}*/
+#stars {
+  background-color: black;
+}
 #stars-background {
-  display:none;
+  width:98vw;
 }
 .site-header {
   background: url("http://i.imgur.com/zb3BZCv.gif");
-  border-radius: 10px;
   height:44vw;
   max-height:470px;
-  width:100%;
+  width:98vw;
+}
+#threejohnny {
+  background-color: black;
+  text-align: center;
+  width:98vw;
 }
 #titles
 {
@@ -187,10 +203,11 @@ header section ul li{
   0% { top: 100%; }
   100% { top: -170%; }
 }
-/*#spinwords {
+#spinwords {
   background-color:rgba(32,43,54,0.2);
   color:black;
-}*/
+  display:none;
+}
 /*.tab-content {
   display:;
 }*/

@@ -51,43 +51,51 @@
 	<main>
 		<section id="name" class="tab-content"></section>
 		<section id="countdown" class="count-down">
-		<button id="playkombat" class="button">Prepare to Fight</button>
+			<button id="playkombat" class="button">Prepare to Fight</button>
 			<button id='playllama' class='button'>LAMMA</button>
-			<button id="destructButton" type="submit" class="button">Self Destruct Sequence</button>
+			<button id="destructButton" type="submit" class="button">Self Destruct</button>
 			<video id='videoCount' class="videoCount"><source src="images/countdown.mp4"></video>
 		</section>
 		<section id='llama' class='llama-game'>
-			<embed width="800" height="600" src="images/llama.swf" type="application/x-shockwave-flash"></embed><!-- <br/>Play free games at <a href="http://www.kongregate.com/">Kongregate</a> -->
+			<embed width="800" height="600" src="images/llama.swf" type="application/x-shockwave-flash"></embed>
     	</section>
-			<!-- <div id="johnny-wash" class="johnny-wash"><img class="johnny" src="images/sillysub.gif"></div> -->
 		<section id="mortalkombat" class="kombat-game">
 			<div>
 				<embed src="images/mortal-kombat.swf" width="600px" height="313px" autostart="true" loop="false" controller="true"></embed>
+				<ul>
+					<li class="controls">[a = punch]</li>
+					<li class="controls">[s = block]</li>
+					<li class="controls">[d = kick]</li>
+					<li class="controls">[arrows to move]</li>
+				</ul>
 			</div>
 		</section>
 		<section>
-		<div id="titles"><div id="titlecontent">
-			<div id="projects" class="tab-content"></div>
-		</div></div>
+			<div id="titles"><div id="titlecontent">
+				<div id="projects" class="tab-content"></div>
+			</div></div>
 		</section>
-		<section id="about" class="tab-content">
-			  <img id="stars-background" src='https://s-media-cache-ak0.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif'>
-			<!-- <section>
-				<a href="javascript:var KICKASS_SITE_KEY='4S4YpKGUflr3bdXtYX16MHAj';var el = document.createElement('script'); el.src = '//hi.kickassapp.com/kickass-mysite.js';document.body.appendChild(el);void(0);">the button</a>
-			</section> -->
-			<section id="dizzy">
+		<section> 
+			<div id="about" class="tab-content"></div>
+			<div id="stars">
+				<img id="stars-background" src='https://s-media-cache-ak0.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif'>
+			</div>
+		</section>
+		<section>
+			<div id="dizzy">
 				<h1>MAKE ME DIZZY!!!</h1>
-			</section>
+			</div>
 		</section>
 		<section id="spinwords">
 			<canvas height="1000" width="1000"/>
 		</section>
+		<section id="threejohnny">
+			<img class="johnny" src="images/sillysub.gif">
+			<img class="johnny" src="images/sillysub.gif">
+			<img class="johnny" src="images/sillysub.gif">
+		</section>
 		<section id="facespin" class="face-spin">
-			<div id="i3d" class="interactive3d">
-				<img class="johnny" src="images/sillysub.gif">
-				<img class="johnny" src="images/sillysub.gif">
-				<img class="johnny" src="images/sillysub.gif">
-			</div>
+			<div id="i3d" class="interactive3d"></div>
 		</section>
 	</main>
 	<footer id="footer" class="footer">
