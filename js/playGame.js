@@ -1,10 +1,16 @@
 'use strict';
 
-var playGame = function(){
-	$('#play-game').on('click', function(){
-		$('.game').toggle();
+var playLlama = function(){
+	$('#playllama').on('click', function(){
+		$('.llama-game').toggle();
+	});
+};
+var playKombat = function(){
+	$('#playkombat').on('click', function(){
+		$('.kombat-game').toggle();
 	});
 };
 $(document).ready(function(){
-	playGame();
+	playLlama();
+	playKombat();
 });
