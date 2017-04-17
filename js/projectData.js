@@ -1,3 +1,5 @@
+'use strict';
+
 var projectData = [
 {
 	title: 'Robust Real Time Face Detection',

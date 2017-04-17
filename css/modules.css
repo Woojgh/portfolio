@@ -1,6 +1,6 @@
 .button {
-  background-color: #004A7F;
   -webkit-border-radius: 10px;
+  background-color: #004A7F;
   border-radius: 10px;
   border: none;
   color: #FFFFFF;
@@ -17,32 +17,27 @@
   50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
 }
-
 @-moz-keyframes glowing {
   0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
   50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
 }
-
 @-o-keyframes glowing {
   0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
   50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
-
 @keyframes glowing {
   0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
   50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
-
 .button {
   -webkit-animation: glowing 1500ms infinite;
   -moz-animation: glowing 1500ms infinite;
   -o-animation: glowing 1500ms infinite;
   animation: glowing 1500ms infinite;
 }
-
 .big-parrot {
   display:none;
 }
@@ -56,13 +51,12 @@ header section ul li{
   font-weight: bold;
 }
 .close-nav {
-  position: absolute;
   height: 8vw;
-  width: 9vw;
-  top: 17vw;
   left: -4vw;
+  position: absolute;
+  top: 17vw;
+  width: 9vw;
 }
-
 #countdown {
   background-color: black;
   border-radius: 10px;
@@ -79,18 +73,18 @@ header section ul li{
   display:inline;
 }
 .fighterLeft {
-  position: absolute;
-  left: 53vw;
-  top: 20vw;
   height:15vw;
+  left: 53vw;
+  position: absolute;
+  top: 20vw;
   width:11vw;
 }
 .fighterRight {
-  position: absolute;
   height: 16vw;
-  width: 11vw;
-  top: 18.9vw;
   left: 23vw;
+  position: absolute;
+  top: 18.9vw;
+  width: 11vw;
 }
 .footer{
   height:80%;
@@ -116,9 +110,9 @@ header section ul li{
   text-align: center;
 }
 .interactive_3d > img{
-  position: relative;
   float: left;
   left: 0;
+  position: relative;
   width: 333px;
 }
 .nav-bar-fighters {
@@ -152,44 +146,43 @@ header section ul li{
 }
 .site-header {
   background: url("http://i.imgur.com/zb3BZCv.gif");
+  border-radius: 10px;
   height:44vw;
   max-height:470px;
-  border-radius: 10px;
   width:100%;
 }
 #titles
 {
-  position: absolute;
-  width: 18em;
-  height: 50em;
   bottom: 0;
-  left: 50%;
-  margin-left: -9em;
   font-size: 350%;
   font-weight: bold;
-  text-align: justify;
+  height: 50em;
+  left: 50%;
+  margin-left: -9em;
   overflow: hidden;
+  position: absolute;
+  text-align: justify;
   transform-origin: 50% 100%;
   transform: perspective(300px) rotateX(25deg);
+  width: 18em;
 }
 #titles:after
 {
-  position: absolute;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+  bottom: 60%;
   content: ' ';
   left: 0;
+  pointer-events: none;
+  position: absolute;
   right: 0;
   top: 0;
-  bottom: 60%;
-  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-  pointer-events: none;
 }
 #titlecontent
 {
+  animation: scroll 100s linear 4s infinite;
   position: absolute;
   top: 100%;
-  animation: scroll 100s linear 4s infinite;
 }
-
 @keyframes scroll {
   0% { top: 100%; }
   100% { top: -170%; }
@@ -206,17 +199,17 @@ header section ul li{
 }
 @media only screen and (min-width: 640px) {
   .fighterRight {
-    position: absolute;
     height: 16vw;
-    width: 11vw;
-    top: 26.9vw;
     left: 23vw;
+    position: absolute;
+    top: 26.9vw;
+    width: 11vw;
   }
   .fighterLeft {
-    position: absolute;
-    left: 53vw;
-    top: 28vw;
     height:15vw;
+    left: 53vw;
+    position: absolute;
+    top: 28vw;
     width:11vw;
   }
   .nav-bar {
@@ -234,17 +227,17 @@ header section ul li{
     display:inline;
   }
   .fighterRight {
-    position: absolute;
     height: 16vw;
-    width: 11vw;
-    top: 18.9vw;
     left: 23vw;
+    position: absolute;
+    top: 18.9vw;
+    width: 11vw;
   }
   .fighterLeft {
-    position: absolute;
-    left: 53vw;
-    top: 20vw;
     height:15vw;
+    left: 53vw;
+    position: absolute;
+    top: 20vw;
     width:11vw;
   }
   .nav-toggle-open {

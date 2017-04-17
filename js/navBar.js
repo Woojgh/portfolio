@@ -43,6 +43,11 @@ var aboutToggle = function(){
   });
 };
 var projectToggle = function(){
+  $('img.fighterLeft').hover(function(){
+     $(this).attr('src','images/kick.gif'); 
+},function(){
+    $(this).attr('src','images/liukang.gif');
+});
   $('#fighterProject').on('click', function(){
     $('#projects').toggle();
   });

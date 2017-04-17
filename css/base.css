@@ -1,7 +1,7 @@
 h1 {
   display:inline;
-  font-family: 'Play', sans-serif;
   color:#313131;
+  font-family: 'Play', sans-serif;
   font-size:45px;
   font-weight: bold;
   -webkit-animation:colorchange 20s infinite alternate;
@@ -41,12 +41,9 @@ h1 {
       color: pink;
     }
   }
-
 a {
-  padding-right:3vw;
-  
   color:#313131;
-      
+  padding-right:3vw;
   -webkit-animation:colorchange 20s infinite alternate;
   }
   @-webkit-keyframes colorchange {
@@ -84,28 +81,17 @@ a {
       color: pink;
     }
   }
-
 body {
-  font-family: 'Play', sans-serif;
-  position:relative;
-  line-height: 1.5;
-  font-size: 100%;
   color: #313131;
+  font-family: 'Play', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  position:relative;
 }
-
 hr {
   margin: 1em;
   width: 80%;
 }
-
-
-
-/*TEXT STYLES
-=======================================*/
 p {
   font-size: 1em;
 }
-
-
-
-
