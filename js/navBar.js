@@ -52,7 +52,7 @@ var aboutToggle = function() {
   });
 };
 var projectToggle = function() {
-  $('img.fighterLeft').hover(function() {
+  $('img.fighter-left').hover(function() {
      $(this).attr('src', 'images/kick.gif');
 },function() {
     $(this).attr('src', 'images/liukang.gif');
