@@ -1,3 +1,5 @@
+'use strict';
+
 var main = function() {
   $('.nav-toggle-open').click(function() {
     $('.nav-bar-ul').animate({
@@ -33,8 +35,14 @@ var navBarClose = function() {
   });
 };
 var aboutToggle = function() {
-  $('img.fighterRight').hover(function() {
-     $(this).attr('src', 'images/raidenattack.gif');
+  $('img.fighter-right').mouseenter(function() {
+    $('img.fighter-right').toggleClass('fighter-right-hover');
+  });
+  $('img.fighter-right').mouseleave(function() {
+    $('img.fighter-right').toggleClass('fighter-right-hover');
+  });
+  $('img.fighter-right').hover(function() {
+    $(this).attr('src', 'images/raidenattack.gif');
 },function() {
     $(this).attr('src', 'images/RaidenBlu.gif');
 });
