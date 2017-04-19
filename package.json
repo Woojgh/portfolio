@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woojgh/portfolio.git"
+  },
+  "author": "James Salamonsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Woojgh/portfolio/issues"
+  },
+  "homepage": "https://github.com/Woojgh/portfolio#readme"
+}
