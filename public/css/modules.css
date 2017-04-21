@@ -48,7 +48,12 @@
 .byline a {
   font-weight: bold;
 }
+.castle-game {
+  display: none;
+  text-align: center;
+}
 #cheet {
+  text-align: center;
   display:none;
 }
 .close-nav {
@@ -105,6 +110,10 @@
 }
 .heading-group-h1 {
   padding: 0 0 .2em 1em;
+}
+.mario-game {
+  text-align: center;
+  display:none;
 }
 #mortalkombat {
   text-align: center;
@@ -218,6 +227,10 @@
   background-color:rgba(32,43,54,0.2);
   color:white;
   display:none;
+}
+.unicorn-game {
+  display:none;
+  text-align: center;
 }
 /*.tab-content {
   display:;

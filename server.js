@@ -4,7 +4,7 @@ const app = express();
 
 const bodyParser = require('body-parser').urlencoded();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 31337;
 
 app.use(express.static('./public'));
 
@@ -14,5 +14,5 @@ app.get('/', function(request, response){
 
 app.listen(PORT, function() {
 	console.log(PORT + 'This is prteter');
-	console.log(`our server is running on port: ${PORT}`);
+	console.log(`My server is running on port: ${PORT}`);
 });
