@@ -41,10 +41,10 @@ var aboutToggle = function() {
     $('img.fighter-right').toggleClass('fighter-right-hover');
   });
   $('img.fighter-right').hover(function() {
-    // $('.fighter-left').attr('src', 'images/liustep2.gif');
+    $('.fighter-left').attr('src', 'images/liustep2.gif');
     $(this).attr('src', 'images/raidenattack.gif');
 },function() {
-  // $('.fighter-left').attr('src', 'images/liukang.gif')
+  $('.fighter-left').attr('src', 'images/liukang.gif')
     $(this).attr('src', 'images/RaidenBlu.gif');
 });
   $('#fighterAbout').on('click', function() {
