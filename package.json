@@ -6,7 +6,9 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "swagger-tools": "^0.10.1",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
