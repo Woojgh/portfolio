@@ -172,10 +172,9 @@
   width: 9vw;
 }
 #spinwords {
-  /*width:98vw;
-  height:98vw;*/
   background-color:black;
   color:black;
+  display:none;
   text-align: center;
 }
 #stars {
