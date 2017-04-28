@@ -87,7 +87,7 @@ var bc = new BoardsController(boardsApiV1);
 var ScoresController = require('./controllers/scores');
 var sc = new ScoresController(boardsApiV1);
 
-// seeds for testing
+//  :D hardcoded for testing :D:D:D:D:D:D
 var PlayersService = require('./services/players');
 var p1 = PlayersService.addPlayer({firstName: 'Ben', lastName: 'Sparks', displayName: 'Warspawn'});
 var p2 = PlayersService.addPlayer({firstName: 'Joe', lastName: 'Blow', displayName: 'Joey558'});
