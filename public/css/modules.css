@@ -1,3 +1,6 @@
+.dg.ac {
+  z-index: 999!important;
+}
 .button {
   -webkit-border-radius: 10px;
   background-color: #004A7F;
