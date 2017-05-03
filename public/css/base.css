@@ -13,11 +13,11 @@ h2 {
   filter: invert(100%);
   }
 #canvas1 {
-  top: 132vw;
-    right: -17vw;
-    position: absolute;
-    z-index: 1;
-  background-color: rgba(0, 0, 0, 0.21);
+  top: 138vw;
+  right: 20vw;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
   color:red;
   }
 #title {

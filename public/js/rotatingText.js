@@ -28,7 +28,7 @@ $(document).ready(function() {
   setInterval(function(){
     tCtx.clearRect(0, 0, 850, 850);
     tCtx.save();
-    // tCtx.fillStyle = ;
+    tctx.fillStyle = ('style', 'color', '0');
     tCtx.fillTextCircle('MAKE ME DIZZY MAKE ME ', 420, 350, 50, 0);
     tCtx.fillTextCircle('MAKE ME DIZZY MAKE ME DIZZY MAKE ME DIZZY ', 420, 350, 100, 0);
     tCtx.fillTextCircle('MAKE ME DIZZY MAKE ME DIZZY MAKE ME DIZZY ', 420, 350, 150, 0);
@@ -127,7 +127,6 @@ addEventListener('resize', (function _self(e) {
   
   for(let x = -2, w = width / prop.square; x < w; x++) {
     
-    // create starting points for the waves (on the first row)
     if(x % 6 === 0) waves.push( pluses.length )
     else if(x % 3 === 0) waves.push( pluses.length - 1 )
     
