@@ -1,8 +1,28 @@
-canvas {
-  background-color: black;
-  color:red;
+#canvas2 {
+  display: block;
+  margin: 0;
 }
 
+h2 {
+  
+  text-align: center;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 11vw;
+  mix-blend-mode: difference;
+  filter: invert(100%);
+  }
+#canvas1 {
+  top: 138vw;
+  right: 20vw;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  color:red;
+  }
+#title {
+      position: absolute;
+}
 h1 {
   display:inline;
   color:#313131;
