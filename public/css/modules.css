@@ -57,6 +57,17 @@
   text-align: center;
   display:none;
 }
+#canvas3 {
+    background: white;
+    display: block;
+  }
+
+#canvas {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 .close-nav {
   height: 8vw;
   left: -4vw;
@@ -189,6 +200,12 @@
   max-height:470px;
   width:98vw;
 }
+#third-canvas {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: #eee;
+  }
 #threejohnny {
   background-color: black;
   text-align: center;

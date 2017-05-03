@@ -28,7 +28,7 @@ $(document).ready(function() {
   setInterval(function(){
     tCtx.clearRect(0, 0, 850, 850);
     tCtx.save();
-    tctx.fillStyle = ('style', 'color', '0');
+    tCtx.fillStyle = ('style', 'color', '0');
     tCtx.fillTextCircle('MAKE ME DIZZY MAKE ME ', 420, 350, 50, 0);
     tCtx.fillTextCircle('MAKE ME DIZZY MAKE ME DIZZY MAKE ME DIZZY ', 420, 350, 100, 0);
     tCtx.fillTextCircle('MAKE ME DIZZY MAKE ME DIZZY MAKE ME DIZZY ', 420, 350, 150, 0);
