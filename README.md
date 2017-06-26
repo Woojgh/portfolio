@@ -15,6 +15,14 @@ nodemon server.js
 
 navigate web browser to https://localhost:31337
 ```
+## Play with the webpage
+
+- Try typing: up up down down left right left right b a
+  - again to cancel affects
+  
+- Try typing: spinwords
+
+- Click on the moratl combat fighters in the nav bar.
 
 ## Meta
 * James Salamonsen – [Linked In](https://www.linkedin.com/in/james-salamonsen-12237b82/) [@Woojgh](https://twitter.com/woojgh) – JamesSalamonsen@gmail.com
