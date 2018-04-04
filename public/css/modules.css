@@ -85,17 +85,17 @@
   display:inline;
 }
 .fighter-left {
-  height:14vw;
+  height: 11.2%;
   left: 53vw;
-  position: absolute;
-  top: 19vw;
-  width:11vw;
+  position: relative;
+  top: 10%;
+  width: 10%;
 }
 .fighter-right {
   height: 15vw;
   left: 23vw;
   position: absolute;
-  top: 18.9vw;
+  top: 9%;
   width: 11vw;
 }
 .fighter-right-hover {
