@@ -1,7 +1,7 @@
 'use strict';
 
-var main = function() {
-  $('.nav-toggle-open').click(function() {
+let main = () => {
+  $('.nav-toggle-open').click(() => {
     $('.nav-bar-ul').animate({
       left: '0px'
     }, 200);
@@ -10,7 +10,7 @@ var main = function() {
       left: '285px'
     }, 200);
   });
-  $('.nav-toggle-close').click(function() {
+  $('.nav-toggle-close').click(() => {
     $('.nav-bar-ul').animate({
       left: '-285px'
     }, 200);
@@ -20,48 +20,48 @@ var main = function() {
     }, 200);
   });
 };
-var navBarOpen = function() {
-  $('#nav-toggle-open').on('click', function() {
+let navBarOpen = () => {
+  $('#nav-toggle-open').on('click', () => {
     $('.nav-toggle-open').toggle();
     $('.nav-bar-fighters').toggle();
     $('.nav-toggle-close').toggle();
   });
 };
-var navBarClose = function() {
-  $('#nav-toggle-close').on('click', function() {
+let navBarClose = () => {
+  $('#nav-toggle-close').on('click', () => {
     $('.nav-toggle-open').toggle();
     $('.nav-bar-fighters').toggle();
     $('.nav-toggle-close').toggle();
   });
 };
-var aboutToggle = function() {
-  $('img.fighter-right').mouseenter(function() {
+let aboutToggle = () => {
+  $('img.fighter-right').mouseenter(() => {
     $('img.fighter-right').toggleClass('fighter-right-hover');
-  }).mouseleave(function() {
+  }).mouseleave(() => {
     $('img.fighter-right').toggleClass('fighter-right-hover');
   });
-  $('img.fighter-right').hover(function() {
+  $('img.fighter-right').hover(() => {
     $('.fighter-left').attr('src', 'images/liustep2.gif');
-    $(this).attr('src', 'images/raidenattack.gif');
-},function() {
-  $('.fighter-left').attr('src', 'images/liukang.gif')
-    $(this).attr('src', 'images/RaidenBlu.gif');
-});
-  $('#fighterAbout').on('click', function() {
+    $('img.fighter-right').attr('src', 'images/raidenattack.gif');
+  }, () => {
+    $('.fighter-left').attr('src', 'images/liukang.gif')
+    $('img.fighter-right').attr('src', 'images/RaidenBlu.gif');
+  });
+  $('#fighterAbout').on('click', () => {
     $('#about').toggle();
   });
 };
-var projectToggle = function() {
-  $('img.fighter-left').hover(function() {
-     $(this).attr('src', 'images/kick.gif');
-},function() {
-    $(this).attr('src', 'images/liukang.gif');
-});
-  $('#fighterProject').on('click', function() {
+let projectToggle = () => {
+  $('img.fighter-left').hover(() => {
+      $('img.fighter-left').attr('src', 'images/kick.gif');
+    }, () => {
+    $('img.fighter-left').attr('src', 'images/liukang.gif');
+  });
+  $('#fighterProject').on('click', () => {
     $('#projects').toggle();
   });
 };
-$(document).ready(function() {
+$(document).ready(() => {
   main();
   navBarOpen();
   navBarClose();
